@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey's Playground</title>
+
     <!-- added frameworks -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- adding manrope font family -->
+
+    <!-- adding manrope google-font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font family -->
+    <style>
+      .font-family{
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="font-family: 'Manrope', sans-serif;">
+<body class=".font-family">
     <header>
         <!-- banner section -->
-        <div class="mx-4 lg:mx-24 my-12 relative">
+        <section class="mx-4 lg:mx-24 my-12 relative">
             <div class="carousel w-full">
                 <!-- slider 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
@@ -54,9 +65,10 @@
                 <h4 class="text-xl lg:text-2xl font-semibold lg:font-bold">Meet all the heroes from the field</h4>
                 <p class="text-[#FFFFFF99] mt-2 lg:mt-4">Hockey Heroes is an eight week hockey programme aimed at beginners that not only focuses on helping children</p>
               </div>
-        </div>
+        </section>
+
         <!-- professional section -->
-        <div class="mx-4 lg:mx-24 my-12">
+        <section class="mx-4 lg:mx-24 my-12">
             <div class="text-center">
                 <h1 class=" text-xl lg:text-4xl font-bold">Professional Hockeys Club</h1>
                 <p class="text-[#13131899] lg:w-2/3 mx-auto mt-6"> Professional athletes in hockey play for professional teams. They play hockey games in front of audiences and compete against other teams in their league.</p>
@@ -83,9 +95,10 @@
                     <p class="text-[#13131899]">This is the next step for players coming out of the Future All-Star Development program.</p>
                 </div>
             </div>
-        </div>
+        </section>
+
         <!-- program section -->
-        <div class="mx-4 lg:mx-24 my-12">
+        <section class="mx-4 lg:mx-24 my-12">
           <div class="text-center my-12">
             <h1 class=" text-xl lg:text-4xl font-bold">Program Sections</h1>
             <p class="text-[#13131899] lg:w-2/3 mx-auto mt-6">Hockey training programs designed to help hockey players improve their game no matter their age, skill level, or training experience.</p>
@@ -108,7 +121,153 @@
               <button class="btn btn-error text-white font-bold">Register Now!</button>
             </div>
           </div>
-        </div>
+        </section>
+
+        <!-- product section -->
+        <section class="mx-4 lg:mx-24 my-12">
+          <div class="text-center my-12">
+            <h1 class=" text-xl lg:text-4xl font-bold">Our New Products</h1>
+            <p class="text-[#13131899] lg:w-2/3 mx-auto mt-6">Want to be up to date with the latest hockey products? Check out the newest hockey skates, sticks, gear and more at Hockey's Playground</p>
+          </div>
+
+          <!-- product grid -->
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+
+            <!-- card 1 -->
+            <div class="mx-auto border p-5 rounded-lg lg:flex gap-4">
+              <img class="w-full lg:w-auto" src="/images/5.png" alt="">
+            <div class="space-y-6">
+              <div class="flex gap-4 mt-4 lg:mt-0">
+                <p class="text-[#13131899]"><i class="fa-solid text-yellow-500 fa-star"></i>
+                  5.0</p>
+                <p class="text-[#13131899]"><i class="fa-solid fa-eye"></i>
+                  20</p>
+                <p class="text-[#13131899]"><i class="fa-regular fa-heart"></i>
+                  200</p>
+              </div>
+              <div class="space-y-4">
+                <h3 class="lg:text-xl font-bold">World Cup Flags Jackets</h3>
+                <p class="text-[#13131899]">Shop all the latest hockey equipment from skates, sticks, protective, goalie, apparel and much more!</p>
+              </div>
+              <div class="lg:flex gap-4 space-y-4 lg:space-y-0">
+                <h6 class="text-red-700 font-semibold">Price-$22.00</h6>
+                <p class="text-[#13131899]"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+            </div>
+            <!-- card 2 -->
+            <div class="mx-auto border p-5 rounded-lg lg:flex gap-4">
+              <img class="w-full lg:w-auto" src="/images/6.png" alt="">
+            <div class="space-y-6">
+              <div class="flex gap-4 mt-4 lg:mt-0">
+                <p class="text-[#13131899]"><i class="fa-solid text-yellow-500 fa-star"></i>
+                  5.0</p>
+                <p class="text-[#13131899]"><i class="fa-solid fa-eye"></i>
+                  20</p>
+                <p class="text-[#13131899]"><i class="fa-regular fa-heart"></i>
+                  200</p>
+              </div>
+              <div class="space-y-4">
+                <h3 class="lg:text-xl font-bold">World Cup Flags Football</h3>
+                <p class="text-[#13131899]">Shop all the latest hockey equipment from skates, sticks, protective, goalie, apparel and much more!</p>
+              </div>
+              <div class="lg:flex gap-4 space-y-4 lg:space-y-0">
+                <h6 class="text-red-700 font-semibold">Price-$22.00</h6>
+                <p class="text-[#13131899]"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+            </div>
+            <!-- card 3 -->
+            <div class="mx-auto border p-5 rounded-lg lg:flex gap-4">
+              <img class="w-full lg:w-auto" src="/images/7.png" alt="">
+            <div class="space-y-6">
+              <div class="flex gap-4 mt-4 lg:mt-0">
+                <p class="text-[#13131899]"><i class="fa-solid text-yellow-500 fa-star"></i>
+                  5.0</p>
+                <p class="text-[#13131899]"><i class="fa-solid fa-eye"></i>
+                  20</p>
+                <p class="text-[#13131899]"><i class="fa-regular fa-heart"></i>
+                  200</p>
+              </div>
+              <div class="space-y-4">
+                <h3 class="lg:text-xl font-bold">Cap For Hockeys</h3>
+                <p class="text-[#13131899]">Shop all the latest hockey equipment from skates, sticks, protective, goalie, apparel and much more!</p>
+              </div>
+              <div class="lg:flex gap-4 space-y-4 lg:space-y-0">
+                <h6 class="text-red-700 font-semibold">Price-$22.00</h6>
+                <p class="text-[#13131899]"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+            </div>            
+            <!-- card 4 -->
+            <div class="mx-auto border p-5 rounded-lg lg:flex gap-4">
+              <img class="w-full lg:w-auto" src="/images/8.png" alt="">
+            <div class="space-y-6">
+              <div class="flex gap-4 mt-4 lg:mt-0">
+                <p class="text-[#13131899]"><i class="fa-solid text-yellow-500 fa-star"></i>
+                  5.0</p>
+                <p class="text-[#13131899]"><i class="fa-solid fa-eye"></i>
+                  20</p>
+                <p class="text-[#13131899]"><i class="fa-regular fa-heart"></i>
+                  200</p>
+              </div>
+              <div class="space-y-4">
+                <h3 class="lg:text-xl font-bold">World Cup Flags Jersey</h3>
+                <p class="text-[#13131899]">Shop all the latest hockey equipment from skates, sticks, protective, goalie, apparel and much more!</p>
+              </div>
+              <div class="lg:flex gap-4 space-y-4 lg:space-y-0">
+                <h6 class="text-red-700 font-semibold">Price-$22.00</h6>
+                <p class="text-[#13131899]"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+            </div>            
+            <!-- card 5 -->
+            <div class="mx-auto border p-5 rounded-lg lg:flex gap-4">
+              <img class="w-full lg:w-auto" src="/images/9.png" alt="">
+            <div class="space-y-6">
+              <div class="flex gap-4 mt-4 lg:mt-0">
+                <p class="text-[#13131899]"><i class="fa-solid text-yellow-500 fa-star"></i>
+                  5.0</p>
+                <p class="text-[#13131899]"><i class="fa-solid fa-eye"></i>
+                  20</p>
+                <p class="text-[#13131899]"><i class="fa-regular fa-heart"></i>
+                  200</p>
+              </div>
+              <div class="space-y-4">
+                <h3 class="lg:text-xl font-bold">Helmet For Hockeys</h3>
+                <p class="text-[#13131899]">Shop all the latest hockey equipment from skates, sticks, protective, goalie, apparel and much more!</p>
+              </div>
+              <div class="lg:flex gap-4 space-y-4 lg:space-y-0">
+                <h6 class="text-red-700 font-semibold">Price-$22.00</h6>
+                <p class="text-[#13131899]"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+            </div>            
+            <!-- card 6 -->
+            <div class="mx-auto border p-5 rounded-lg lg:flex gap-4">
+              <img class="w-full lg:w-auto" src="/images/10.png" alt="">
+            <div class="space-y-6">
+              <div class="flex gap-4 mt-4 lg:mt-0">
+                <p class="text-[#13131899]"><i class="fa-solid text-yellow-500 fa-star"></i>
+                  5.0</p>
+                <p class="text-[#13131899]"><i class="fa-solid fa-eye"></i>
+                  20</p>
+                <p class="text-[#13131899]"><i class="fa-regular fa-heart"></i>
+                  200</p>
+              </div>
+              <div class="space-y-4">
+                <h3 class="lg:text-xl font-bold">World Cup Flags Football</h3>
+                <p class="text-[#13131899]">Shop all the latest hockey equipment from skates, sticks, protective, goalie, apparel and much more!</p>
+              </div>
+              <div class="lg:flex gap-4 space-y-4 lg:space-y-0">
+                <h6 class="text-red-700 font-semibold">Price-$22.00</h6>
+                <p class="text-[#13131899]"><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</p>
+              </div>
+            </div>
+            </div>            
+          </div>
+
+        </section>
 
     </header>
     <main>
